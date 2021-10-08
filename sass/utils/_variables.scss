@@ -1,0 +1,23 @@
+:root {
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2f303a;
+  --logo-color: #000000;
+  --logo-color-footer: #ffffff;
+  --card-border-color: #eeeeee;
+  --svg-color: #afb1b8;
+  --hover-button-color: #188ce8;
+  --shadov-color: rgba(0, 0, 0, 0.15);
+}
+
+$width-calc: (
+  "wc2": calc((100% - 30px) / 2),
+  "wc3": calc((100% - 3 * 30px) / 3),
+  "wc4": calc((100% - 4 * 30px) / 4),
+  "wc6": calc((100% - 6 * 30px) / 6),
+  "dh": calc((100% - 2 * 30px) / 2),
+);

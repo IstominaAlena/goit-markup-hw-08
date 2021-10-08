@@ -1,0 +1,7 @@
+.filter {
+  @include flexing();
+}
+
+.filter-item:not(:first-child) {
+  margin-left: 8px;
+}
