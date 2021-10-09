@@ -1,10 +1,34 @@
-// .hero.overlay {
-//   max-width: 1600px;
+.hero.overlay {
+  max-width: 480px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/mobile/mobile-hero.jpg");
+  background-repeat: no-repeat;
+}
 
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("../images/hero-background.jpg");
-// }
+@media screen and (min-width: 768px) {
+  .hero.overlay {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/tablet-hero.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero.overlay {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/desktop-hero.jpg");
+  }
+}

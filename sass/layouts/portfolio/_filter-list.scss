@@ -1,7 +1,25 @@
 .filter {
-  @include flexing();
+  @include flexing($jus-cont: flex-start);
+  flex-wrap: wrap;
 }
 
-.filter-item:not(:first-child) {
+.filter-item:not(:nth-child(3n + 1)) {
   margin-left: 8px;
+}
+
+.filter-item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+  .filter-item {
+    margin-bottom: 0;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
 }

@@ -1,15 +1,31 @@
-// .join-container {
-//   width: map-get($width-calc, "wc2;");
-//   padding-top: 12px;
-// }
+.join-container {
+  width: calc((100% - 30px) / 2);
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
-// .join-title {
-//   margin-bottom: 20px;
+.join-title {
+  margin-bottom: 20px;
 
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
-//   color: var(--secondary-text-color);
-// }
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .join-container {
+    margin: 0;
+    padding-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-container {
+    padding-top: 12px;
+  }
+}

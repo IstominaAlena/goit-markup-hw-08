@@ -1,43 +1,24 @@
-// .hero-modal {
-//   position: absolute;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%) scale(1);
+.hero-modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-//   min-width: 528px;
-//   min-height: 581px;
-//   padding: 40px;
+  @include flexing($al-it: center);
 
-//   background-color: var(--primary-background-color);
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  @include border(rgba(0, 0, 0, 0.1));
 
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 
-//   .hero-backdrop.is-hidden & {
-//     transform: translate(-50%, -50%) scale(1.2);
-//   }
-// }
+  background-color: transparent;
 
-// .hero-modal-button {
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//   @include flexing($al-it: center);
-
-//   width: 30px;
-//   height: 30px;
-//   padding: 0;
-//   border-radius: 50%;
-//   @include border(rgba(0, 0, 0, 0.1));
-
-//   cursor: pointer;
-
-//   background-color: transparent;
-
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     fill: var(--accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

@@ -1,18 +1,18 @@
-// .location.lower-contact {
-//   color: var(--secondary-text-color);
-// }
+.location.lower-contact {
+  color: var(--secondary-text-color);
+}
 
-// .lower-contact {
-//   color: rgba(255, 255, 255, 0.6);
+.lower-contact {
+  color: rgba(255, 255, 255, 0.6);
 
-//   text-decoration: none;
+  text-decoration: none;
 
-//   &:not(:last-child) {
-//     margin-bottom: 9px;
-//   }
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
