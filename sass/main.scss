@@ -11,7 +11,6 @@
 // ********** COMPONENTS
 @import "./components/main/logo";
 @import "./components/main/section-title";
-@import "./components/main/contacts";
 @import "./components/main/buttons";
 @import "./components/main/social-links";
 @import "./components/main/social-icons";
@@ -19,6 +18,8 @@
 // ********** LAYOUTS
 @import "./layouts/main/header/header-general";
 @import "./layouts/main/header/main-navigation";
+@import "./layouts/main/header/header-contacts";
+@import "./layouts/main/mobile-menu";
 
 @import "./layouts/main/hero/hero-general";
 @import "./layouts/main/hero/hero-overlay";
@@ -30,14 +31,11 @@
 
 @import "./layouts/main/our-working-section/our-working-list";
 
-@import "./layouts/main/our-team-section/our-team-general";
 @import "./layouts/main/our-team-section/our-team-list";
 @import "./layouts/main/our-team-section/member-definition";
-@import "./layouts/main/our-team-section/team-social-list";
 
 @import "./layouts/main/our-clients-section/clients-list";
 @import "./layouts/main/our-clients-section/client-links";
-@import "./layouts/main/our-clients-section/clients-icons";
 
 @import "./layouts/main/footer/footer-general";
 //CONTACTS
@@ -57,11 +55,7 @@
 @import "./layouts/main/modal/hero-backdrop";
 @import "./layouts/main/modal/hero-modal";
 @import "./layouts/main/modal/hero-button";
-@import "./layouts/main/modal/hero-form/form-general";
-@import "./layouts/main/modal/hero-form/hero-label";
-@import "./layouts/main/modal/hero-form/hero-input";
-@import "./layouts/main/modal/hero-form/hero-icon";
-@import "./layouts/main/modal/hero-form/hero-comment";
-@import "./layouts/main/modal/hero-form/hero-checkbox";
-@import "./layouts/main/modal/hero-form/checkbox-icon";
-@import "./layouts/main/modal/hero-form/form-button";
+@import "./layouts/main/hero-form/form-general";
+@import "./layouts/main/hero-form/hero-for-data";
+@import "./layouts/main/hero-form/hero-checkbox";
+@import "./layouts/main/hero-form/form-button";

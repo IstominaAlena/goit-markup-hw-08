@@ -4,6 +4,15 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
 }
 
 .join-title {
@@ -15,17 +24,4 @@
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
-}
-
-@media screen and (min-width: 768px) {
-  .join-container {
-    margin: 0;
-    padding-top: 5px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .join-container {
-    padding-top: 12px;
-  }
 }

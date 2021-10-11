@@ -23,16 +23,12 @@
     border-color: var(--accent-color);
     outline: none;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .mailing-input {
+  @media screen and (min-width: 768px) {
     width: 450px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .mailing-input {
+  @media screen and (min-width: 1200px) {
     width: 358px;
   }
 }

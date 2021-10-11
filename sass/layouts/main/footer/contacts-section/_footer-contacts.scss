@@ -1,21 +1,27 @@
 .address-container {
   width: 232px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .contacts.bottom {
   display: flex;
   flex-direction: column;
-}
+  font-style: normal;
+  line-height: 1.71;
 
-@media screen and (min-width: 768px) {
-  .address-container {
-    width: calc((100% - 30px) / 2);
+  &.list {
+    display: flex;
+    margin-left: auto;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .address-container {
-    text-align: left;
+  & .item:not(:first-child) {
+    margin-left: 50px;
   }
 }

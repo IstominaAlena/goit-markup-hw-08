@@ -5,6 +5,13 @@
   padding-bottom: 118px;
 
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    text-align: center;
+  }
 }
 
 .hero-title {
@@ -20,17 +27,8 @@
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
-}
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-    text-align: center;
-  }
-
-  .hero-title {
+  @media screen and (min-width: 1200px) {
     max-width: 696px;
 
     font-size: 44px;

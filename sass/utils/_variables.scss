@@ -13,10 +13,3 @@
   --hover-button-color: #188ce8;
   --shadov-color: rgba(0, 0, 0, 0.15);
 }
-
-$width-calc: (
-  "wc2": calc((100% - 30px) / 2),
-  "wc3": calc((100% - 3 * 30px) / 3),
-  "wc4": calc((100% - 4 * 30px) / 4),
-  "wc6": calc((100% - 6 * 30px) / 6),
-  );

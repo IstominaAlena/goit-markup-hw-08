@@ -7,6 +7,10 @@
   & > p {
     margin-bottom: 16px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .specialization {
@@ -24,8 +28,10 @@
   color: var(--title-text-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .member-container {
-    padding-bottom: 30px;
-  }
+.social-list {
+  display: inline-flex;
+}
+
+.social-item:not(:first-child) {
+  margin-left: 10px;
 }
