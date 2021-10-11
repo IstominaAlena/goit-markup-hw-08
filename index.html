@@ -17,14 +17,15 @@
   </head>
 
   <body>
-    <!-- Хедер
+    <!-- Хедер -->
     <header class="header-section">
       <div class="container header-container">
         <nav class="main-nav">
+          <!-- logo -->
           <a lang="en" href="./index.html" class="logo">
             <span>Web</span>Studio
           </a>
-
+          <!-- main nav -->
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link current">Студия</a>
@@ -35,7 +36,7 @@
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-
+        <!-- contacts -->
         <ul class="contacts list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="contacts-link">
@@ -55,17 +56,52 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <!-- mobile menu -->
+      <div>
+        <button type="button"></button>
+        <nav class="main-nav">
+          <ul class="contacts list">
+            <li><a href="./index.html">Студия</a></li>
+            <li><a href="./portfolio.html">Портфолио</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul>
+          <li>
+            <a href="tel:+380961111111">
+              <svg class="header-icon" width="16" height="16">
+                <use href="./images/svg/symbol-defs.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com">
+              <svg class="header-icon" width="16" height="16">
+                <use href="./images/svg/symbol-defs.svg#mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </header>
 
-    <!-- <main>
-      Hero
+    <main>
+      <!-- Hero -->
       <section class="hero overlay">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="button hero" type="button" data-modal-open>
           Заказать услугу
         </button>
       </section>
-       Our benefits
+      <!-- Our benefits -->
       <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">Наши преимущества</h2>
@@ -102,58 +138,144 @@
         </div>
       </section>
 
-      Our working process
+      <!-- Our working process -->
       <section class="section only-desktop">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="working-list list">
             <li class="img-item working-thumb">
-              <img
-                src="./images/desktop/working-proces/img1-1.jpg"
-                alt="Мужчина за рабочим столом пишет код на компьютере"
-                width="370"
-                height="294"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/working-proces/webp/img1-1.webp             1x,
+                    ./images/desktop/working-proces/desktop2x/webp/x2img1-1.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desktop/working-proces/img1-1.jpg             1x,
+                    ./images/desktop/working-proces/desktop2x/x2img1-1.jpg 2x
+                  "
+                  src="./images/desktop/working-proces/img1-1.jpg"
+                  alt="Мужчина за рабочим столом пишет код на компьютере"
+                  width="370"
+                  height="294"
+                  class="image"
+                />
+              </picture>
               <p class="working-text">Десктопные приложения</p>
             </li>
             <li class="img-item working-thumb">
-              <img
-                src="./images/desktop/working-proces/img1-2.jpg"
-                alt="Женщина держит в руках телефон на фоне ноутбука"
-                width="370"
-                height="294"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/working-proces/webp/img1-2.webp             1x,
+                    ./images/desktop/working-proces/desktop2x/webp/x2img1-2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desktop/working-proces/img1-2.jpg             1x,
+                    ./images/desktop/working-proces/desktop2x/x2img1-2.jpg 2x
+                  "
+                  src="./images/desktop/working-proces/img1-2.jpg"
+                  alt="Женщина держит в руках телефон на фоне ноутбука"
+                  width="370"
+                  height="294"
+                  class="image"
+                />
+              </picture>
               <p class="working-text">Мобильные приложения</p>
             </li>
             <li class="img-item working-thumb">
-              <img
-                src="./images/desktop/working-proces/img1-3.jpg"
-                alt="Палитра цветов для рисования на планшете"
-                width="370"
-                height="294"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/working-proces/webp/img1-3.webp             1x,
+                    ./images/desktop/working-proces/desktop2x/webp/x2img1-3.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desktop/working-proces/img1-3.jpg             1x,
+                    ./images/desktop/working-proces/desktop2x/x2img1-3.jpg 2x
+                  "
+                  src="./images/desktop/working-proces/img1-3.jpg"
+                  alt="Палитра цветов для рисования на планшете"
+                  width="370"
+                  height="294"
+                  class="image"
+                />
+              </picture>
               <p class="working-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
 
-      Our team
+      <!-- Our team -->
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-member">
-              <img
-                src="./images/desktop/our-team/desktop-img-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/our-team/webp/desktop-img1.webp             1x,
+                    ./images/desktop/our-team/desktop2x/webp/desktop2x-img1.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/our-team/desktop-img1.jpg             1x,
+                    ./images/desktop/our-team/desktop2x/desktop2x-img1.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <sourse
+                  srcset="
+                    ./images/tablet/our-team/webp/tablet-img1.webp             1x,
+                    ./images/tablet/our-team/tablet2x/webp/tablet2x-img1.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/tablet/our-team/tablet-img1.jpg            1x,
+                    ./images/tablet/our-team/tablet2x/tablet2x-img1.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <sourse
+                  srcset="
+                    ./images/mobile/our-team/webp/mobile-img1.webp             1x,
+                    ./images/mobile/our-team/mobile2x/webp/mobile2x-img1.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/our-team/mobile-img1.jpg            1x,
+                    ./images/mobile/our-team/mobile2x/mobile2x-img1.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="#" alt="Игорь Демьяненко" class="image" />
+              </picture>
+
               <div class="member-container">
                 <h3 class="member">Игорь Демьяненко</h3>
                 <p class="specialization">Product Designer</p>
@@ -194,13 +316,56 @@
             </li>
 
             <li class="team-member">
-              <img
-                src="./images/desktop/our-team/desktop-img-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/our-team/webp/desktop-img2.webp             1x,
+                    ./images/desktop/our-team/desktop2x/webp/desktop2x-img2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/our-team/desktop-img2.jpg             1x,
+                    ./images/desktop/our-team/desktop2x/desktop2x-img2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <sourse
+                  srcset="
+                    ./images/tablet/our-team/webp/tablet-img2.webp             1x,
+                    ./images/tablet/our-team/tablet2x/webp/tablet2x-img2.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/our-team/tablet-img2.jpg            1x,
+                    ./images/tablet/our-team/tablet2x/tablet2x-img2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <sourse
+                  srcset="
+                    ./images/mobile/our-team/webp/mobile-img2.webp             1x,
+                    ./images/mobile/our-team/mobile2x/webp/mobile2x-img2.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/our-team/mobile-img2.jpg            1x,
+                    ./images/mobile/our-team/mobile2x/mobile2x-img2.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="#" alt="Ольга Репина" class="image" />
+              </picture>
+
               <div class="member-container">
                 <h3 class="member">Ольга Репина</h3>
                 <p class="specialization">Frontend Developer</p>
@@ -241,13 +406,56 @@
             </li>
 
             <li class="team-member">
-              <img
-                src="./images/desktop/our-team/desktop-img-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/our-team/webp/desktop-img3.webp             1x,
+                    ./images/desktop/our-team/desktop2x/webp/desktop2x-img3.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/our-team/desktop-img3.jpg             1x,
+                    ./images/desktop/our-team/desktop2x/desktop2x-img3.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <sourse
+                  srcset="
+                    ./images/tablet/our-team/webp/tablet-img3.webp             1x,
+                    ./images/tablet/our-team/tablet2x/webp/tablet2x-img3.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/our-team/tablet-img3.jpg            1x,
+                    ./images/tablet/our-team/tablet2x/tablet2x-img3.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <sourse
+                  srcset="
+                    ./images/mobile/our-team/webp/mobile-img4.webp             1x,
+                    ./images/mobile/our-team/mobile2x/webp/mobile2x-img4.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/our-team/mobile-img3.jpg            1x,
+                    ./images/mobile/our-team/mobile2x/mobile2x-img3.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="#" alt="Николай Тарасов" class="image" />
+              </picture>
+
               <div class="member-container">
                 <h3 class="member">Николай Тарасов</h3>
                 <p class="specialization">Marketing</p>
@@ -288,13 +496,48 @@
             </li>
 
             <li class="team-member">
-              <img
-                src="./images/desktop/our-team/desktop-img-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-                class="image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/our-team/webp/desktop-img4.webp             1x,
+                    ./images/desktop/our-team/desktop2x/webp/desktop2x-img4.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/our-team/desktop-img4.jpg             1x,
+                    ./images/desktop/our-team/desktop2x/desktop2x-img4.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <sourse
+                  srcset="
+                    ./images/tablet/our-team/webp/tablet-img4.webp             1x,
+                    ./images/tablet/our-team/tablet2x/webp/tablet2x-img4.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/our-team/tablet-img4.jpg            1x,
+                    ./images/tablet/our-team/tablet2x/tablet2x-img4.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/our-team/mobile-img4.jpg            1x,
+                    ./images/mobile/our-team/mobile2x/mobile2x-img4.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="#" alt="Михаил Ермаков" class="image" />
+              </picture>
+
               <div class="member-container">
                 <h3 class="member">Михаил Ермаков</h3>
                 <p class="specialization">UI Designer</p>
@@ -337,7 +580,7 @@
         </div>
       </section>
 
-      Our clients
+      <!-- Our clients -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -387,15 +630,15 @@
           </ul>
         </div>
       </section>
-    </main>  -->
-    Футер
+    </main>
+    <!-- Футер -->
     <footer class="bottom-contacts">
       <div class="container footer-container">
         <div class="left-side-footer">
           <div class="address-container">
             <!-- logo -->
-            <a class="logo second" href="./index.html"
-              ><span>Web</span>Studio
+            <a class="logo second" href="./index.html">
+              <span>Web</span>Studio
             </a>
             <!-- contacts -->
             <address class="contacts bottom">
@@ -474,7 +717,7 @@
       </div>
     </footer>
 
-    <!-- Hero modal
+    <!-- Hero modal -->
     <div class="hero-backdrop is-hidden" data-modal>
       <div class="hero-modal">
         <button class="hero-modal-button" type="button" data-modal-close>
@@ -565,6 +808,6 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>  -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

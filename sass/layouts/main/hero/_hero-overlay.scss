@@ -7,8 +7,32 @@
     ),
     url("../images/mobile/mobile-hero.jpg");
   background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/mobile2x-hero.jpg");
+  }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero.overlay {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/tablet2x-hero.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .hero.overlay {
     max-width: 768px;
@@ -21,6 +45,19 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero.overlay {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/desktop2x-hero.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero.overlay {
     max-width: 1600px;
