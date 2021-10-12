@@ -982,7 +982,6 @@ img {
 }
 
 .join-container {
-  width: calc((100% - 30px) / 2);
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -991,6 +990,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .join-container {
+    width: calc((100% - 30px) / 2);
     margin: 0;
     padding-top: 5px;
   }
