@@ -1520,8 +1520,8 @@ img {
   .filter-item {
     margin-bottom: 0;
   }
-  .filter-item:not(:first-child) {
-    margin-left: 8px;
+  .filter-item:not(:last-child) {
+    margin-right: 8px;
   }
 }
 

@@ -31,8 +31,8 @@
   .filter-item {
     margin-bottom: 0;
 
-    &:not(:first-child) {
-      margin-left: 8px;
+    &:not(:last-child) {
+      margin-right: 8px;
     }
   }
 }
