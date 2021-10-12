@@ -430,6 +430,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-top: 64px;
+    max-width: 100%;
   }
   .menu-social-item:not(:first-child) {
     margin-left: 10px;
